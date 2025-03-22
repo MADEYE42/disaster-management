@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { readData, writeData } from '@/lib/db';
+import { User as BaseUser } from '@/lib/types';
 
 interface Emergency {
   id: string;
@@ -11,11 +12,27 @@ interface Emergency {
   timestamp: string;
 }
 
-interface Database {
-  emergencies?: Emergency[];
+// Extend the BaseUser interface to include the role property
+export interface User extends BaseUser {
+  role: string;
 }
 
-interface ExtendedDatabase extends Database {}
+interface Database {
+  emergencies?: Emergency[];
+  users?: BaseUser[];
+  admins?: any[];
+  volunteers?: any[];
+  agencies?: any[];
+}
+
+// Define ExtendedDatabase with the local User interface that includes role
+interface ExtendedDatabase {
+  emergencies?: Emergency[];
+  users?: User[];
+  admins?: any[];
+  volunteers?: any[];
+  agencies?: any[];
+}
 
 export async function POST(request: Request) {
   try {
@@ -26,7 +43,8 @@ export async function POST(request: Request) {
     }
 
     const emergencyIdStr = String(emergencyId); // Ensure emergencyId is a string
-    const db: ExtendedDatabase = await readData();
+    const db: ExtendedDatabase = await readData() as ExtendedDatabase;
+    db.users = db.users ?? [];
     console.log('Received emergencyId:', emergencyIdStr);
     console.log('Current emergencies:', db.emergencies);
 
@@ -47,7 +65,14 @@ export async function POST(request: Request) {
     }
 
     db.emergencies![emergencyIndex] = emergency;
-    await writeData(db);
+    db.users = db.users || [];
+    await writeData({ 
+      ...db, 
+      users: db.users ?? [], 
+      admins: db.admins ?? [], 
+      volunteers: db.volunteers ?? [], 
+      agencies: db.agencies ?? [] 
+    });
 
     return NextResponse.json(emergency);
   } catch (error) {

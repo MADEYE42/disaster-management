@@ -790,7 +790,7 @@ function DisasterSection({
             <video
               controls
               className="w-full rounded-lg"
-              src={videoLink} // Using the first video link from the array
+              src={videoLink[0]} // Using the first video link from the array
             >
               Your browser does not support the video tag.
             </video>

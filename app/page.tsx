@@ -111,8 +111,6 @@ export default function Home() {
             </motion.div>
           </div>
           <div className="md:w-1/2 mt-10 md:mt-0">
-            <img
-              src="https://img.freepik.com/free-photo/view-apocalyptic-dark-stormy-clouds_23-2151065770.jpg"></img>
             <motion.img
               src="https://images.unsplash.com/photo-1541710005980-7ea80ff232d6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               initial={{ opacity: 0, scale: 0.95 }}

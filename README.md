@@ -3,10 +3,10 @@
 **Suraksha** is a mental health support platform designed to provide empathetic and supportive assistance to survivors through a chatbot powered by the 💡 Gemini 1.5 Flash API. The platform includes features for users to post emergencies, volunteers to accept and respond to emergencies, and a chatbot for mental health support. The chatbot is accessible via a 💬 floating widget, ensuring a non-intrusive user experience.
 
 ## 📚 Table of Contents
-- [✨ Features](#features)
+- [✨ Features](#features) 
+- [🤖 Machine Learning Models Used](#machine-learning-models-used)
 - [🖥️ Tech Stack](#tech-stack)
 - [📋 Prerequisites](#prerequisites)
-- [🤖 Machine Learning Models Used](#machine-learning-models-used)
 - [⚙️ Installation](#installation)
 - [🚀 Usage](#usage)
 - [🤝 Contributing](#contributing)

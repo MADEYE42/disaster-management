@@ -35,6 +35,35 @@
   - Links to mental health resources (e.g., NAMI, National Suicide Prevention Lifeline).
   - Encourages users to seek professional help for serious issues like self-harm.
 
+Here's the updated section for your README.md file highlighting the machine learning models used:
+
+---
+
+## 🤖 Machine Learning Models Used
+
+To enhance the platform's capabilities, Suraksha leverages **five powerful machine learning models** for various tasks:
+
+1. **🧠 LSTM (Long Short-Term Memory)**  
+   - Used for analyzing sequential text data (e.g., chat conversations) to understand context and emotional patterns over time.
+
+2. **📖 BERT (Bidirectional Encoder Representations from Transformers)**  
+   - State-of-the-art NLP model for understanding user queries with human-like context awareness and sentiment analysis.
+
+3. **🌳 XGBoost (Extreme Gradient Boosting)**  
+   - Employed for classification tasks, helping prioritize emergencies based on severity indicators.
+
+4. **🌲 Random Forest**  
+   - Used for ensemble learning to improve prediction accuracy in risk assessment scenarios.
+
+5. **📊 Logistic Regression**  
+   - Provides baseline classification capabilities for simpler decision-making processes.
+
+These models work together to:
+- Analyze user inputs for risk factors
+- Provide personalized response suggestions
+- Detect urgent situations requiring volunteer intervention
+- Continuously improve through feedback loops
+
 ## 🖥️ Tech Stack
 - **Frontend**: Next.js (React), TypeScript, Tailwind CSS
 - **Backend**: Next.js API Routes
@@ -80,18 +109,6 @@
 1. **Access the Platform**: Visit `http://localhost:3000`.
 2. **Interact with the Chatbot**: Click the 💬 chat icon to open the chat window.
 3. **User & Volunteer Dashboards**: Post and manage emergencies, accept or decline emergencies.
-
-## 📂 Project Structure
-(Structure content goes here)
-
-## 🌐 API Endpoints
-(API content goes here)
-
-## 🤖 Chatbot Integration
-(Integration content goes here)
-
-## 🛡️ Safety and Ethical Considerations
-(Considerations content goes here)
 
 ## 🤝 Contributing
 1. **Fork the repository**.

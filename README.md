@@ -35,10 +35,6 @@
   - Links to mental health resources (e.g., NAMI, National Suicide Prevention Lifeline).
   - Encourages users to seek professional help for serious issues like self-harm.
 
-Here's the updated section for your README.md file highlighting the machine learning models used:
-
----
-
 ## 🤖 Machine Learning Models Used
 
 To enhance the platform's capabilities, Suraksha leverages **five powerful machine learning models** for various tasks:

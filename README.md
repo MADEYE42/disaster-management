@@ -6,12 +6,9 @@
 - [✨ Features](#features)
 - [🖥️ Tech Stack](#tech-stack)
 - [📋 Prerequisites](#prerequisites)
+- [🤖 Machine Learning Models Used](#machine-learning-models-used)
 - [⚙️ Installation](#installation)
 - [🚀 Usage](#usage)
-- [📂 Project Structure](#project-structure)
-- [🌐 API Endpoints](#api-endpoints)
-- [🤖 Chatbot Integration](#chatbot-integration)
-- [🛡️ Safety and Ethical Considerations](#safety-and-ethical-considerations)
 - [🤝 Contributing](#contributing)
 - [📧 Contact](#contact)
 

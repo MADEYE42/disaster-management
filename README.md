@@ -99,7 +99,7 @@ These models work together to:
    ```
 
 ## 🚀 Usage
-1. **Access the Platform**: Visit `http://localhost:3000`.
+1. **Access the Platform**: Visit `[website](https://disaster-management-bdfc.vercel.app/login)`.
 2. **Interact with the Chatbot**: Click the 💬 chat icon to open the chat window.
 3. **User & Volunteer Dashboards**: Post and manage emergencies, accept or decline emergencies.
 
